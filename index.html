@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LearnWeb3 First dApp</title>
+
+    <script
+      src="https://cdn.ethers.io/lib/ethers-5.7.2.umd.min.js"
+      type="application/javascript"
+    ></script>
+    <script src="./script.js"></script>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div {
+            width: 20%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        button {
+            width: 100%;
+            margin: 10px 0px 5px 0px;
+        }
+    </style>
+
+  </head>
+<body>
+  <div>
+    <h1>我学习的第一个去中心化程序app!</h1>
+    <p>此处我们获取和更新链上的数值:</p>
+    <label for="mood">输入链上值:</label> <br />
+    <input type="text" id="mood" />
+
+    <button onclick="getMood()">读取链上数值</button>
+    <button onclick="setMood()">设置链上数值</button>
+    <p id="showMood"></p>
+  </div>
+</body>
+
+</html>
+
